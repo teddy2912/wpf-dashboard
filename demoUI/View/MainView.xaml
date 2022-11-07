@@ -8,7 +8,9 @@
         xmlns:local="clr-namespace:demoUI.View"
         xmlns:viewModel="clr-namespace:demoUI.ViewModels"
         mc:Ignorable="d"
-        Title="MainView" Height="450" Width="800">
+        Title="MainView" Height="550" Width="1000"
+        WindowStyle="None"
+        ResizeMode="NoResize">
     <Window.DataContext>
         <viewModel:MainViewModel/>
     </Window.DataContext>
@@ -17,8 +19,17 @@
         <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
             <local:HomeView/>
         </DataTemplate>
-        <DataTemplate DataType="{x:Type viewModel:CustomerViewModel}">
-            <local:CustomerView/>
+        <DataTemplate DataType="{x:Type viewModel:UserViewModel}">
+            <local:UserView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:ProductViewModel}">
+            <local:ProductView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:CategoryViewModel}">
+            <local:CategoryView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:OrderViewModel}">
+            <local:OrderView/>
         </DataTemplate>
 
     </Window.Resources>
@@ -33,6 +44,7 @@ get previous code in previous tutorial-->
                 <GradientStop Color="{StaticResource winBorderColor2}" Offset="0.5"/>
                 <GradientStop Color="{StaticResource winBorderColor3}" Offset="1"/>
             </LinearGradientBrush>
+        
         </Border.BorderBrush>
         <Grid>
 
@@ -79,15 +91,16 @@ get previous code in previous tutorial-->
 
                     <RadioButton Style="{StaticResource menuButton}"
                                  Tag="{StaticResource color2}"
-                                 Command="{Binding ShowCustomerViewCommand}">
+                                 Command="{Binding ShowUserViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="User" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Customer" Style="{StaticResource menuButtonText}"/>
+                            <TextBlock Text="User" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
-                                 Tag="{StaticResource color3}">
+                                 Tag="{StaticResource color3}"
+                                 Command="{Binding ShowOrderViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="Truck" Style="{StaticResource menuButtonIcon}"/>
                             <TextBlock Text="Order" Style="{StaticResource menuButtonText}"/>
@@ -95,18 +108,20 @@ get previous code in previous tutorial-->
                     </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
-                                 Tag="{StaticResource color4}">
+                                 Tag="{StaticResource color4}"
+                                 Command="{Binding ShowProductViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="ShoppingBag" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Transaction" Style="{StaticResource menuButtonText}"/>
+                            <TextBlock Text="Product" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
 
                     <RadioButton Style="{StaticResource menuButton}"
-                                 Tag="{StaticResource color5}">
+                                 Tag="{StaticResource color5}"
+                                 Command="{Binding ShowCategoryViewCommand}">
                         <StackPanel Orientation="Horizontal">
                             <fa:IconImage Icon="Box" Style="{StaticResource menuButtonIcon}"/>
-                            <TextBlock Text="Stock" Style="{StaticResource menuButtonText}"/>
+                            <TextBlock Text="Category" Style="{StaticResource menuButtonText}"/>
                         </StackPanel>
                     </RadioButton>
                     <RadioButton Style="{StaticResource menuButton}"
@@ -197,12 +212,13 @@ get previous code in previous tutorial-->
                                     Orientation="Horizontal"
                                     VerticalAlignment="Center">
 
-                            <fa:IconImage Icon="Home"
+                            <fa:IconImage Icon="{Binding Icon}"
                                           Height="20"
                                           Width="20"
                                           Foreground="{StaticResource titleColor2}"
-                                          Margin="35,0,10,0"/>
-                            <TextBlock Text="Dashboard"
+                                          Margin="35,0,10,0"
+                                          />
+                            <TextBlock Text="{Binding Caption}"
                                        Foreground="{StaticResource titleColor2}"
                                        FontSize="16"
                                        FontWeight="Medium"
@@ -258,7 +274,7 @@ get previous code in previous tutorial-->
                     </Grid>
 
                     <!--Content section / Child views-->
-                    <ContentControl Content="{Binding CurrentChilView}"
+                    <ContentControl Content="{Binding CurrentChildView}"
                                     Grid.Row="2"
                                     Margin="25"/>
                 </Grid>
