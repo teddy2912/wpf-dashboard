@@ -3,7 +3,6 @@ C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\Styles\Button
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\Styles\UIColors.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\Client.g.cs
-C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\CustomerView.g.cs
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\HomeView.g.cs
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\Login.g.cs
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\MainView.g.cs
@@ -28,7 +27,6 @@ C:\Users\phong\source\repos\demoUI\demoUI\bin\Debug\net6.0-windows\runtimes\win\
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\App.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\MainWindow.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\Client.baml
-C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\CustomerView.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\HomeView.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\Login.baml
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\MainView.baml
@@ -44,3 +42,11 @@ C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\demoUI.pdb
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\demoUI.genruntimeconfig.cache
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\ref\demoUI.dll
 C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\UserView.g.cs
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\UserView.baml
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\CategoryView.g.cs
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\OrderView.g.cs
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\ProductView.g.cs
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\CategoryView.baml
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\OrderView.baml
+C:\Users\phong\source\repos\demoUI\demoUI\obj\Debug\net6.0-windows\View\ProductView.baml

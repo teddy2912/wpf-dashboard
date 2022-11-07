@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\Users\phong\source\repos\demoUI\demoUI\App.xaml
-51548391316
+111678588931
 
-41867025981
-2042135220403
-MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\Dashboard.xaml;View\Login.xaml;
+191238714562
+208-1551620769
+MainWindow.xaml;Styles\ButtonStyles.xaml;Styles\UIColors.xaml;View\CategoryView.xaml;View\Client.xaml;View\HomeView.xaml;View\Login.xaml;View\MainView.xaml;View\OrderView.xaml;View\ProductView.xaml;View\UserView.xaml;
 
-False
+True
 

@@ -7,10 +7,19 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="View\CategoryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="View\Client.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\CustomerView.xaml.cs">
+    <Compile Update="View\OrderView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\ProductView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\HomeView.xaml.cs">
@@ -33,10 +42,19 @@
     <Page Update="Styles\UIColors.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="View\CategoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="View\Client.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="View\CustomerView.xaml">
+    <Page Update="View\OrderView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\ProductView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserView.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\HomeView.xaml">
